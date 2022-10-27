@@ -74,6 +74,15 @@ body {
   font-size: 1.4rem;
 }
 
+.email-container a:visited,
+.email-container a:link {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #272a31;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
 .header .header-top-container a:link,
 .header .header-top-container a:visited {
   text-decoration: none;
@@ -110,7 +119,8 @@ body {
 }
 
 .section-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
     url(images/hero-background.jpg);
   min-height: calc(100vh - 9rem);
   background-size: cover;
@@ -396,12 +406,13 @@ svg {
   font-size: 1.6rem;
 }
 
-/* 
+/*
 styles for the about page  */
 
 .about-hero {
   padding: 6rem 0;
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       rgba(255, 255, 255, 0.9),
       rgba(255, 255, 255, 0.9)
     ),
@@ -454,15 +465,6 @@ styles for the about page  */
   margin-top: 6rem;
   margin-bottom: 1rem;
   color: var(--color-primary);
-}
-
-.email-container a:visited,
-.email-container a:link {
-  text-decoration: none;
-  font-size: 1.6rem;
-  color: #272a31;
-  font-weight: 600;
-  transition: all 0.2s;
 }
 
 .about-mission {
@@ -549,7 +551,7 @@ styles for the about page  */
 }
 
 .dark-content {
-color: var(--color-white) !important;
+  color: var(--color-white) !important;
 }
 
 @media (min-width: 768px) {
