@@ -34,7 +34,10 @@ body {
   margin: 0 auto !important;
 }
 
-.header-top, .header-bottom, .nav-desktop, .logo-image {
+.header-top,
+.header-bottom,
+.nav-desktop,
+.logo-image {
   display: none;
 }
 
@@ -53,7 +56,8 @@ body {
 }
 
 .section-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
     url(images/hero-background.jpg);
   min-height: calc(100vh - 9rem);
   background-size: cover;
@@ -360,7 +364,8 @@ styles for the about page  */
 
 .about-hero {
   padding: 6rem 0;
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       rgba(255, 255, 255, 0.9),
       rgba(255, 255, 255, 0.9)
     ),
@@ -563,9 +568,9 @@ styles for the about page  */
     justify-content: space-between;
   }
 
-.nav-mobile {
-  display: none !important;
-}
+  .nav-mobile {
+    display: none !important;
+  }
 
   .email-container a:visited,
   .email-container a:link {
