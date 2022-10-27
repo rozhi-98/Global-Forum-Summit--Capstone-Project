@@ -52,6 +52,9 @@ You can [ learn more here>>](https://stylelint.io/user-guide/usage/cli/#autofixi
 [Live Demo Link](https://rozhi-98.github.io/Suli-Forum--Capstone-Project/)
 
 
+## video of me explaining my capstone project
+
+https://www.loom.com/share/156d02ad0d9b4a8a94edaee7de982641
 
 ## Author
 
