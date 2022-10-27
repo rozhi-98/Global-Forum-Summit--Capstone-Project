@@ -34,42 +34,18 @@ body {
   margin: 0 auto !important;
 }
 
-.header {
-  position: sticky;
-  top: 0;
-  left: 0;
-  background-color: #fff;
-  box-shadow: 0 0.5rem 1rem 0.2rem rgb(0 0 0 / 5%);
-  z-index: 999;
-}
-
-.header-top {
+.header-top, .header-bottom, .nav-desktop, .logo-image {
   display: none;
 }
 
-.header-bottom {
+.nav-mobile {
   display: flex;
-  flex-direction: row-reverse;
-  min-height: 6rem;
-  align-items: center;
-  justify-content: space-between;
+  background-color: transparent !important;
+  position: absolute;
 }
 
-.header .navbar {
-  display: flex;
-  align-items: center;
-}
-
-.navbar .nav-link {
-  text-decoration: none;
-  color: var(--color-primary);
-  font-size: 1.6rem;
-  transition: all 0.2s;
-  font-weight: 600;
-}
-
-.logo-image {
-  display: none;
+.bg-about {
+  background-color: rgba(0, 0, 0, 0.55) !important;
 }
 
 .main {
@@ -77,8 +53,7 @@ body {
 }
 
 .section-hero {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
     url(images/hero-background.jpg);
   min-height: calc(100vh - 9rem);
   background-size: cover;
@@ -385,8 +360,7 @@ styles for the about page  */
 
 .about-hero {
   padding: 6rem 0;
-  background-image:
-    linear-gradient(
+  background-image: linear-gradient(
       rgba(255, 255, 255, 0.9),
       rgba(255, 255, 255, 0.9)
     ),
@@ -529,6 +503,27 @@ styles for the about page  */
 }
 
 @media (min-width: 768px) {
+  .header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem 0.2rem rgb(0 0 0 / 5%);
+    z-index: 999;
+  }
+
+  .header .navbar {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar .nav-link {
+    text-decoration: none;
+    font-size: 1.6rem;
+    transition: all 0.2s;
+    font-weight: 600;
+  }
+
   .header-top {
     background-color: var(--color-primary);
     height: 3rem;
@@ -563,7 +558,14 @@ styles for the about page  */
   .header-bottom {
     display: flex;
     flex-direction: row;
+    min-height: 6rem;
+    align-items: center;
+    justify-content: space-between;
   }
+
+.nav-mobile {
+  display: none !important;
+}
 
   .email-container a:visited,
   .email-container a:link {
